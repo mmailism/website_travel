@@ -12,18 +12,20 @@
     transition: .2s linear;
 }
 
---black: #0d0100;
---green: #5f5e04;
---brown: #a36d2d;
---light-green: #7b7f2b;
---light-brown: #d4b080;
---light-black-color: #666;
---white: #fff;
---light-bg: #eee;
---box-shadow: 1px 5px 15px rgba(0,0,0,.1);
---border: 2px solid rgba(0,0,0,.1);
---outline: 1px solid rgba(0,0,0,.1);
---outline-hover: 5px solid var(--light-green);
+:root{
+    --black: #0d0100;
+    --green: #5f5e04;
+    --brown: #a36d2d;
+    --light-green: #7b7f2b;
+    --light-brown: #d4b080;
+    --light-black-color: #666;
+    --white: #fff;
+    --light-bg: #eee;
+    --box-shadow: 1px 5px 15px rgba(0,0,0,.1);
+    --border: 2px solid rgba(0,0,0,.1);
+    --outline: 1px solid rgba(0,0,0,.1);
+    --outline-hover: 5px solid var(--light-green);
+}
 
 @mixin grid($val) {
     display: grid;
@@ -48,6 +50,24 @@ html{
     }
 }
 
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 20px 9%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
 
-
+    .logo{
+        margin-right: auto;
+        font-size: 25px;
+        color: var(--black);
+        font-weight: 550;
+    }
+    i{
+        color: var(--brown);
+    }
+}
 
