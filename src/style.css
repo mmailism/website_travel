@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&display=swap');
+
+*{
+    font-family: "Edu AU VIC WA NT Hand", cursive;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+--black: #0d0100;
+--green: #5f5e04;
+--brown: #a36d2d;
+--light-green: #7b7f2b;
+--light-brown: #d4b080;
+--light-black-color: #666;
+--white: #fff;
+--light-bg: #eee;
+--box-shadow: 1px 5px 15px rgba(0,0,0,.1);
+--border: 2px solid rgba(0,0,0,.1);
+--outline: 1px solid rgba(0,0,0,.1);
+--outline-hover: 5px solid var(--light-green);
+
+@mixin grid($val) {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax($val, 1fr));
+    gap:15px;
+}
+
+html{
+    font-size: 70%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 50px;
+
+    &::-webkit-scrollbar{
+        width: 10px;
+    }
+    &::-webkit-scrollbar-track{
+        background: var(--white);
+    }
+    &::-webkit-scrollbar-thumb{
+        background: var(--black);
+    }
+}
+
+
+
+
