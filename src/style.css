@@ -1,7 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
 
 *{
-    font-family: "Edu AU VIC WA NT Hand", cursive;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 400;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -14,13 +17,12 @@
 
 :root{
     --black: #0d0100;
-    --green: #5f5e04;
-    --brown: #a36d2d;
-    --light-green: #7b7f2b;
-    --light-brown: #d4b080;
+    --green: #1a472a;
+    --yellow: #ffbf00;
+    --light-green: #36802d;
     --light-black-color: #666;
     --white: #fff;
-    --light-bg: #eee;
+    --light-bg: #c9df8a;
     --box-shadow: 1px 5px 15px rgba(0,0,0,.1);
     --border: 2px solid rgba(0,0,0,.1);
     --outline: 1px solid rgba(0,0,0,.1);
@@ -64,10 +66,30 @@ html{
         margin-right: auto;
         font-size: 25px;
         color: var(--black);
-        font-weight: 550;
+        font-weight: 600;
     }
     i{
-        color: var(--brown);
+        color: var(--light-green);
+    }
+
+    .navbar{
+        a{
+            margin-left: 20px;
+            font-size: 17px;
+            color: var(--black);
+
+            &:hover{
+                color: var(--light-green);
+            }
+        }
+    }
+
+    .icons a,
+    .icons div{
+        font-size: 20px;
+        margin-left: 20px;
+        cursor: pointer;
+        color: var(--black);
     }
 }
 
