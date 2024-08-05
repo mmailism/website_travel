@@ -52,9 +52,9 @@
 
     <!-- ===== home section start ===== -->
     <section class="home" id="home">
-        <div class="home-slider">
-            <div class="wrapper">
-                <div class="slide">
+        <div class="swiper home-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
                     <div class="box" style="background: url(/img/home-bg-1.jpg) no-repeat;">
                         <div class="content">
                             <span>never stop</span>
@@ -65,8 +65,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="slide">
-                    <div class="box" style="background: url(/img/home-bg-2.jpg) no-repeat;">
+                <div class="swiper-slide">
+                    <div class="box second" style="background: url(/img/home-bg-2.jpg) no-repeat;">
                         <div class="content">
                             <span>make tour</span>
                             <h3>amazing</h3>
@@ -76,7 +76,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="slide">
+                <div class="swiper-slide">
                     <div class="box" style="background: url(/img/home-bg-3.jpg) no-repeat;">
                         <div class="content">
                             <span>explore the</span>
@@ -88,6 +88,8 @@
                     </div>
                 </div>
             </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
         </div>
     </section>
     <!-- ===== home section end ===== -->
@@ -108,8 +110,9 @@
 
 
 
-
-    <!-- ===== link to JS File ===== -->
-    <script src="script.js"></script>
+<!-- ===== link swipe ===== -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<!-- ===== link to JS File ===== -->
+<script src="script.js"></script>
 </body>
 </html>

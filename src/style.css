@@ -24,7 +24,7 @@
     --white: #fff;
     --light-bg: #c9df8a;
     --box-shadow: 1px 5px 15px rgba(0,0,0,.1);
-    --border: 2px solid rgba(0,0,0,.1);
+    --border: 2px solid rgba(0,0,0,.8);
     --outline: 1px solid rgba(0,0,0,.1);
     --outline-hover: 5px solid var(--light-green);
 }
@@ -54,6 +54,23 @@ html{
 
 section{
     padding: 50px 9%;
+}
+
+.btn{
+    margin-top: 10px;
+    display: inline-block;
+    border: var(--border);
+    border-radius: 5px;
+    color: var(--black);
+    cursor: pointer;
+    background: none;
+    font-size: 17px;
+    padding: 10px 30px;
+
+    &:hover{
+        background: var(--black);
+        color: var(--white);
+    }
 }
 
 .header{
@@ -182,6 +199,33 @@ section{
         align-items: center;
         background-size: cover !important;
         background-position: center !important;
+        justify-content: flex-end;
+        padding: 20px 9%;
+
+        &.second{
+            justify-content: flex-start;
+        }
+        .content{
+            width: 500px;
+
+            span{
+                font-size: 40px;
+                color: var(--black);
+            }
+            h3{
+                font-size: 60px;
+                color: var(--green);
+                font-weight: 700;
+                padding-top: 15px;
+                text-transform: uppercase;
+            }
+            p{
+                line-height: 2;
+                color: var(--black);
+                font-size: 15px;
+                padding: 10px 0;
+            }
+        }
     }
 }
 
