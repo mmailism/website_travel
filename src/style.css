@@ -90,6 +90,68 @@ html{
         margin-left: 20px;
         cursor: pointer;
         color: var(--black);
+
+        &:hover{
+            color: var(--light-green);
+        }
+    }
+
+    #menu-btn{
+        display: none;
     }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+/* media screen */
+
+@media (max-width:1200px) {
+    .header{
+        padding: 20px;
+    }
+}
+@media (max-width:991px) {
+    html{
+        font-size: 55%;
+    }
+}
+@media (max-width:768px) {
+    .header{
+        #menu-btn{
+            display: inline-block;
+        }
+        .navbar{
+            position: fixed;
+            top: 0; left: 0;
+            background: var(--white);
+            z-index: 10000;
+            width: 350px;
+            height: 100%;
+            box-shadow: 0 0 0 100vw rgba(0,0,0,.5);
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+            justify-content: center;
+
+            a{
+                margin: 10px 0;
+                font-size: 30px;
+            }
+        }
+    }
+}
+@media (max-width:450px) {
+    html{
+        font-size: 50%;
+    }
+}
