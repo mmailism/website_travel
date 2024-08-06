@@ -22,7 +22,9 @@ window.onscroll = () =>{
 };
 
 var swiper = new Swiper(".home-slider", {
-  navigation: {
+    loop:true,
+    grabCursor:true,
+    navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },

@@ -228,7 +228,11 @@ section{
         }
     }
 }
-
+.swiper-button-next::after,
+.swiper-button-prev::after{
+    font-size: 30px;
+    color: var(--black);
+}
 
 
 
@@ -255,6 +259,26 @@ section{
 @media (max-width:991px) {
     html{
         font-size: 55%;
+    }
+    .home .box{
+        padding: 20px;
+        justify-content: center;
+        background-position: right !important;
+
+        &.second{
+            justify-content: center;
+            background-position: left !important;
+        }
+        .content{
+            text-align: center;
+
+            span{
+                font-size: 30px;
+            }
+            h3{
+                font-size: 40px;
+            }
+        }
     }
 }
 @media (max-width:768px) {
@@ -290,6 +314,11 @@ section{
             }
         }
     }
+    .swiper-button-next::after,
+    .swiper-button-prev::after{
+        display: none;
+    }
+
 }
 @media (max-width:450px) {
     html{
