@@ -313,6 +313,10 @@ section{
     .slide{
         width: 350px;
         border: var(--border);
+        
+        &:hover .image .icons{
+            transform: translateY(0);
+        }
 
         .image{
             position: relative;
@@ -321,23 +325,24 @@ section{
             width: 100%;
 
             img{
-                height: 250px;
+                height: 100%;
                 width: 100%;
                 object-fit: cover;
             }
             .icons{
                 width: 100%;
                 position: absolute;
-                bottom: 20px;
-                left: 0;
+                bottom: 20px; left: 0;
                 text-align: center;
                 z-index: 10;
+                transform: translateY(70px);
 
                 a{
-                    height: 45px;
-                    width: 45px;
-                    line-height: 45px;
-                    font-size: 17px;
+                    height: 40px;
+                    width: 40px;
+                    border-radius: 50%;
+                    line-height: 42px;
+                    font-size: 15px;
                     background: var(--black);
                     color: var(--white);
                     margin: 0 2px;
