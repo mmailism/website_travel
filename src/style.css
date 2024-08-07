@@ -384,9 +384,10 @@ section{
 
 .packages{
     background: var(--light-bg);
+
     .box-container{
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
 
         .box{
             text-align: center;
@@ -394,8 +395,9 @@ section{
             border: var(--border);
             box-shadow: var(--box-shadow);
 
-            image{
+            .image{
                 height: 250px;
+                /* width: 400px; */
                 overflow: hidden;
                 padding: 20px;
                 padding-bottom: 0;
@@ -405,6 +407,25 @@ section{
                     height: 100%;
                     width: 100%;
                     object-fit: cover;
+                    border-radius: 5px;
+                }
+            }
+            .content{
+                padding: 20px;
+
+                h3{
+                    font-size: 20px;
+                    color: var(--black);
+                }
+                p{
+                    font-size: 15px;
+                    color: var(--black);
+                    padding: 10px 0;
+                    line-height: 2;
+                }
+                .price{
+                    font-size: 20px;
+                    color: var(--green);
                 }
             }
         }
