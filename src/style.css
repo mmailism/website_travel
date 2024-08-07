@@ -254,7 +254,7 @@ section{
 .category{
     .box-container{
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 
         .box{
             text-align: center;
@@ -316,7 +316,6 @@ section{
 
 .shop{
     .slide{
-        /* border: var(--border); */
         border-radius: 2%;
         border: 1.5px solid rgba(0,0,0,.8);
         
@@ -387,17 +386,33 @@ section{
 
     .box-container{
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 
         .box{
             text-align: center;
             background: var(--white);
             border: var(--border);
             box-shadow: var(--box-shadow);
+            border-radius: 5px;
+
+            &:hover{
+                background: var(--black);
+
+                .content > *{
+                    color: var(--white);
+                }
+                .btn{
+                    border-color: var(--white);
+
+                    &:hover{
+                        background: var(--white);
+                        color: var(--black);
+                    }
+                }
+            }
 
             .image{
                 height: 250px;
-                /* width: 400px; */
                 overflow: hidden;
                 padding: 20px;
                 padding-bottom: 0;
