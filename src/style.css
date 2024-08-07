@@ -311,8 +311,9 @@ section{
 
 .shop{
     .slide{
-        width: 350px;
-        border: var(--border);
+        /* border: var(--border); */
+        border-radius: 2%;
+        border: 1.5px solid rgba(0,0,0,.8);
         
         &:hover .image .icons{
             transform: translateY(0);
@@ -323,6 +324,7 @@ section{
             overflow: hidden;
             height: 300px;
             width: 100%;
+            border-radius: 3%;
 
             img{
                 height: 100%;
@@ -471,5 +473,8 @@ section{
 @media (max-width:450px) {
     html{
         font-size: 50%;
+    }
+    .heading{
+        font-size: 30px;
     }
 }
