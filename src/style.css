@@ -16,7 +16,7 @@
 }
 
 :root{
-    --black: #0d0100;
+    --black: #051400;
     --green: #1a472a;
     --yellow: #ffbf00;
     --light-green: #36802d;
@@ -386,11 +386,12 @@ section{
 
     .box-container{
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 
         .box{
             text-align: center;
             background: var(--white);
+            margin: 20px;
             border: var(--border);
             box-shadow: var(--box-shadow);
             border-radius: 5px;
