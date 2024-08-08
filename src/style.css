@@ -594,11 +594,10 @@ section{
 
 .newsletter{
     background: var(--light-bg);
-    text-align: center;
     
     .content{
         max-width: 700px;
-        margin: 10px 0;
+        margin: 10px auto;
         text-align: center;
 
         p{
@@ -618,7 +617,7 @@ section{
                 width: 100%;
                 background: none;
                 text-transform: none;
-                font-size: 15px;
+                font-size: 16px;
                 color: var(--black);
                 padding: 0 13px;
             }
@@ -629,8 +628,8 @@ section{
                 color: var(--white);
 
                 &:hover{
-                    background: none;
-                    color: var(--black);
+                    background: var(--light-green);
+                    color: var(--white);
                 }
             }
         }
