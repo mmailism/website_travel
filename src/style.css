@@ -53,6 +53,7 @@ html{
 
 section{
     padding: 50px 9%;
+    text-align: center;
 }
 
 .btn{
@@ -591,6 +592,50 @@ section{
     }
 }
 
+.newsletter{
+    background: var(--light-bg);
+    text-align: center;
+    
+    .content{
+        max-width: 700px;
+        margin: 10px 0;
+        text-align: center;
+
+        p{
+            font-size: 15px;
+            line-height: 2;
+            color: var(--black);
+        }
+        form{
+            margin-top: 20px;
+            background: var(--white);
+            border-radius: 50px;
+            border: var(--border);
+            padding: 7px;
+            display: flex;
+
+            .email{
+                width: 100%;
+                background: none;
+                text-transform: none;
+                font-size: 15px;
+                color: var(--black);
+                padding: 0 13px;
+            }
+            .btn{
+                margin-top: 0;
+                border-radius: 50px;
+                background: var(--black);
+                color: var(--white);
+
+                &:hover{
+                    background: none;
+                    color: var(--black);
+                }
+            }
+        }
+    }
+}
 
 
 
