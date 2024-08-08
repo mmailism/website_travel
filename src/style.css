@@ -34,12 +34,6 @@ img{
     width: auto;
 }
 
-@mixin grid($val) {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax($val, 1fr));
-    gap:15px;
-}
-
 html{
     font-size: 70%;
     overflow-x: hidden;
@@ -448,9 +442,108 @@ section{
     }
 }
 
+.services{
+    background: var(--light-bg);
 
+    .box-container{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 
+        .box{
+            text-align: center;
+            background: var(--white);
+            padding: 20px;
+            margin: 10px;
+            border: var(--border);
+            box-shadow: var(--box-shadow);
+            border-radius: 5px;
 
+            &:hover{
+                background: var(--black);
+
+                img{
+                    filter: invert(1);
+                }
+                p{
+                    color: var(--white);
+                }
+                h3{
+                    color: var(--light-green);
+                }
+                .btn{
+                    border-color: var(--white);
+                    color: var(--white);
+
+                    &:hover{
+                        background: var(--white);
+                        color: var(--black);
+                    }
+                }
+            }
+
+            img{
+                height: 100px;
+                margin-bottom: 10px;
+            }
+            h3{
+                font-size: 20px;
+                color: var(--green);
+            }
+            p{
+                font-size: 15px;
+                color: var(--black);
+                padding: 10px 0;
+                line-height: 2;
+            }
+        }
+    }
+}
+
+.reviews{
+    .slide{
+        .text{
+            padding: 20px;
+            font-size: 15px;
+            background: var(--light-bg);
+            border-radius: 5px;
+            color: var(--black);
+            line-height: 2;
+            position: relative;
+            z-index: 0;
+            margin-bottom: 30px;
+
+            &::before{
+                content: '';
+                position: absolute;
+                bottom: -15px;
+                left: 7px;
+                height: 30px;
+                width: 30px;
+                background: var(--light-bg);
+                transform: rotate(45deg);
+            }
+        }
+        .user{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            img{
+                height: 70px;
+                width: 70px;
+                border-radius: 50%;
+            }
+            h3{
+                font-size: 20px;
+                color: var(--black);
+            }
+            span{
+                color: var(--green);
+                font-size: 15px;
+            }
+        }
+    }
+}
 
 
 
