@@ -545,6 +545,51 @@ section{
     }
 }
 
+.blogs{
+    .slide{
+        text-align: center;
+        padding: 20px;
+
+        img{
+            height: 250px;
+            width: 100%;
+            object-fit: cover;
+        }
+        .icons{
+            background: var(--black);
+            border-radius: 5px;
+            padding: 10px;
+            position: relative;
+            top: -20px;
+            display: inline-block;
+
+            a{
+                font-size: 14px;
+                color: var(--white);
+
+                &:hover{
+                    color: var(--green);
+                }
+
+                i{
+                    padding-right: 5px;
+                    color: var(--green);
+                }
+            }
+        }
+        h3{
+            font-size: 20px;
+            color: var(--black);
+        }
+
+        p{
+            font-size: 14px;
+            padding: 10px 0;
+            line-height: 2;
+            color: var(--black);
+        }
+    }
+}
 
 
 
